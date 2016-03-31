@@ -1,0 +1,13 @@
+{
+  "name": "typescript-slides",
+  "version": "1.0.0",
+  "description": "slides for typescript talk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "prez",
+    "watch": "prez --serve --watch"
+  },
+  "author": "Steve Friedman",
+  "license": "ISC"
+}
