@@ -3,3 +3,12 @@
 #chapter-foo p {
 	text-transform: uppercase;
 }
+/*reset the logo styles*/
+#hello p img {
+	 background: initial;
+	 border: initial;
+	 box-shadow:initial;
+}
+#hello h2 {
+	color: white;
+}
