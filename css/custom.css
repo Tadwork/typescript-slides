@@ -9,6 +9,10 @@
 	 border: initial;
 	 box-shadow:initial;
 }
-#hello h2 {
+#hello h3 {
 	color: white;
+}
+
+pre code{
+	background:white;
 }
