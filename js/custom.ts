@@ -4,7 +4,7 @@
 // You can customize Reveal options:
 Reveal.configure({"center": false});
 
-// head.js does not have any typeings
+// head.js does not have any typings
 declare var head:any;
 
 // (an outdated version of) http://headjs.com/ is also loaded
@@ -14,7 +14,7 @@ head.ready("lodash.min.js", function () {
 head.js("https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js");
 
 var why = function ():void {
-console.log('logging errors')
+    console.log('logging errors')
 }
 Reveal.addEventListener( 'slidechanged', function( event ) {
     // event.previousSlide, event.currentSlide, event.indexh, event.indexv
