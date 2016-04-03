@@ -44,8 +44,11 @@
 <section id="why" class="slide" data-has-notes="true">
 <h1>Why?</h1><ul>
 <li>Compiles to clean Plain JS</li>
-<li>Catch <del>mispelling</del> misspelling  errors early!</li>
-<li>First class React.js / jsx support</li>
+<li>Use the latest JS features (ES 2015+)</li>
+<li>Catch <del>mispelling</del> misspelling  errors early</li>
+<li>Tooling support <em>(WebStorm / Atom / VS Code)</em></li>
+<li>First class React.js / jsx support
+<img src="images/puppydog_2.png" alt=""></li>
 </ul><aside class="notes"><p>why should you use TypeScript?
 <a href="https://blog.asana.com/2014/11/asana-switching-typescript/">Asana</a></p>
 <p><a href="https://medium.com/@alexewerlof/when-should-i-use-typescript-311cb5fe801b#.3fj2giwug">Alex Ewerlöf</a></p></aside>
@@ -111,6 +114,46 @@
 </code></pre>
 <p><em>no change!</em></p>
 </section>
+
+<section id="start-type-annotations" class="slide" data-background="#eaeec3" data-transition="silde-in fade-out" data-has-notes="false">
+<h2>Type annotations</h2><pre><code class="lang-typescript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greeter</span>(<span class="hljs-params">person : <span class="hljs-built_in">string</span> </span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello, "</span> + person;
+}
+
+<span class="hljs-keyword">var</span> user = <span class="hljs-string">"Jane User"</span>;
+
+<span class="hljs-built_in">document</span>.body.innerHTML = greeter(user);
+</code></pre>
+</section>
+
+<section id="start-type-annotations" class="slide" data-background="#eaeec3" data-transition="silde-in fade-out" data-has-notes="false">
+<h2>Type annotations</h2><pre><code class="lang-typescript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greeter</span>(<span class="hljs-params">person : <span class="hljs-built_in">string</span> </span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello, "</span> + person;
+}
+
+<span class="hljs-keyword">var</span> user = <span class="hljs-string">"Jane User"</span>;
+
+<span class="hljs-built_in">document</span>.body.innerHTML = greeter(user);
+</code></pre>
+<p>JS is already typed, it just converts implicitly!</p>
+<ul>
+<li>number</li>
+<li>string</li>
+<li>boolean</li>
+</ul>
+</section>
+</section>
+
+<section id="demo" class="slide" data-has-notes="false">
+<h1>Demo!</h1>
+</section>
+
+<section id="where-to-next" class="slide" data-has-notes="false">
+<h2>Where do I go from Here?</h2> <iframe src="//giphy.com/embed/eij3Aplt9hquI?html5=true" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+<ul>
+<li><a href="https://basarat.gitbooks.io/typescript/content/docs/iterators.html">git book</a> : in depth guide to the language</li>
+</ul>
 </section></div>
     </div>
 

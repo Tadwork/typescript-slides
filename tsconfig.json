@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "sourceMap": true,
+    "target": "es5",
+    "experimentalDecorators": true
+  },
+  "compileOnSave":true,
+  "buildOnSave":true,
+  "files": [
+    "typings/reveal/reveal.d.ts",
+    "js/custom.ts"
+  ]
+}

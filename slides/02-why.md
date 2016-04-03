@@ -1,8 +1,11 @@
 # Why?
 
 - Compiles to clean Plain JS
-- Catch ~~mispelling~~ misspelling  errors early!
+- Use the latest JS features (ES 2015+)
+- Catch ~~mispelling~~ misspelling  errors early
+- Tooling support _(WebStorm / Atom / VS Code)_
 - First class React.js / jsx support
+![](images/puppydog_2.png)
 Note:
 why should you use TypeScript?
 [Asana](https://blog.asana.com/2014/11/asana-switching-typescript/)

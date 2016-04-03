@@ -13,6 +13,34 @@
 	color: white;
 }
 
+#why img {
+	position: absolute;
+	right: -600px;
+	width: 400px;
+	height: 400px;
+	background: blue;
+	-webkit-animation: slide 0.5s forwards;
+	-webkit-animation-delay: 2s;
+	animation: slide 0.5s forwards;
+	animation-delay: 2s;
+	background: initial;
+	border: initial;
+	box-shadow:initial;
+}
+
+@-webkit-keyframes slide {
+	100% { right: 0; }
+}
+
+@keyframes slide {
+	100% { right: 0; }
+}
 pre code{
 	background:white;
+}
+
+#where-to-next p{
+	text-align:center;
+}
+#where-to-next p a{font-size:5px;
 }
