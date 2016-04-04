@@ -1,5 +1,5 @@
 $background:#eaeef3$
-$transition:silde-in fade-out$
+$transition:slide-in fade-out$
 ## Your First TypeScript code
 
 ```typescript

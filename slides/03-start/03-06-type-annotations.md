@@ -1,5 +1,5 @@
 $background:#eaeec3$
-$transition:silde-in fade-out$
+$transition:fade$
 ## Type annotations
 
 ```typescript

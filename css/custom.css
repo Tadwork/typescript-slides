@@ -12,28 +12,34 @@
 #hello h3 {
 	color: white;
 }
+#hello h5 {
+	color: white;
+	text-align: right;
+	margin-bottom: -50px;
+}
 
-#why img {
+#why-why  p img.pull-right {
 	position: absolute;
-	right: -600px;
+	top:350px;
+	right: 0px;
 	width: 400px;
 	height: 400px;
-	background: blue;
-	-webkit-animation: slide 0.5s forwards;
-	-webkit-animation-delay: 2s;
-	animation: slide 0.5s forwards;
-	animation-delay: 2s;
 	background: initial;
 	border: initial;
 	box-shadow:initial;
+	z-index: 100;
 }
 
-@-webkit-keyframes slide {
-	100% { right: 0; }
-}
-
-@keyframes slide {
-	100% { right: 0; }
+#why-why  p img.pull-left {
+	position: absolute;
+	top:440px;
+	left: 300px;
+	/*width: 400px;*/
+	/*height: 400px;*/
+	background: initial;
+	border: initial;
+	box-shadow:initial;
+	z-index: -100;
 }
 pre code{
 	background:white;
@@ -42,5 +48,20 @@ pre code{
 #where-to-next p{
 	text-align:center;
 }
-#where-to-next p a{font-size:5px;
+#where-to-next p a{
+	font-size:5px;
+}
+/* why tooling*/
+#why-tooling img {
+	width: 100px;
+	height: 100px;
+	background: initial;
+	border: initial;
+	box-shadow:initial;
+}
+#why-tooling table {
+	margin-top:-100px;
+}
+#why-tooling table td{
+	border:none;
 }

@@ -22,7 +22,7 @@ var config = {
     },
     devServer: {
         hot: true,
-        open:true
+        open:true,
     }
 };
 

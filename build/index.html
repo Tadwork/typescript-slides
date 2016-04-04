@@ -37,39 +37,102 @@
 
     <div class="reveal">
       <div class="slides"><section id="hello" class="slide" data-background="#294E80" data-has-notes="false">
-<p><img src="images/typescript_logo.svg" alt=""></p>
+<h5>1.8</h5><p><img src="images/typescript_logo.svg" alt=""></p>
 <h3>By: Steve Friedman</h3>
 </section>
 
-<section id="why" class="slide" data-has-notes="true">
+<section id="chapter-why" class="chapter">
+<section id="why-splash" class="slide" data-transition="fade-out" data-has-notes="false">
+<h1>Why?</h1>
+</section>
+
+<section id="why-why" class="slide" data-transition="fade-in" data-has-notes="true">
 <h1>Why?</h1><ul>
 <li>Compiles to clean Plain JS</li>
 <li>Use the latest JS features (ES 2015+)</li>
 <li>Catch <del>mispelling</del> misspelling  errors early</li>
 <li>Tooling support <em>(WebStorm / Atom / VS Code)</em></li>
-<li>First class React.js / jsx support
-<img src="images/puppydog_2.png" alt=""></li>
-</ul><aside class="notes"><p>why should you use TypeScript?
+<li>First class React.js / jsx support</li>
+</ul>
+<p class="fragment">
+    <img src="images/puppydog_2.png" class="pull-right"/>
+    <p class="fragment">
+        <img src="images/labrador-puppies.png" class="pull-left"/>
+    </p>
+</p><aside class="notes"><p>why should you use TypeScript?
 <a href="https://blog.asana.com/2014/11/asana-switching-typescript/">Asana</a></p>
 <p><a href="https://medium.com/@alexewerlof/when-should-i-use-typescript-311cb5fe801b#.3fj2giwug">Alex Ewerlöf</a></p></aside>
+</section>
+
+<section id="why-tooling" class="slide" data-has-notes="true">
+<p><h2>Tooling Support</h2></p>
+<table width="500" border="0" cellpadding="5">
+    <tr>
+        <td align="center" valign="center">
+            <img src="images/tooling/atom.png" alt="atom" />
+            <br />
+            Atom
+        </td>
+        <td align="center" valign="center">
+            <img src="images/tooling/vim.png" alt="vim" />
+            <br />
+            Vim
+        </td><br>        <td align="center" valign="center">
+            <img src="images/tooling/webstorm.png" alt="webstorm" />
+            <br />
+            WebStorm
+        </td>
+        <td align="center" valign="center">
+            <img src="images/tooling/vs-code.png" alt="vs code" />
+            <br />
+            VS Code
+        </td>
+    </tr>
+     <tr>
+        <td align="center" valign="center">
+            <img src="images/tooling/st.png" alt="st" />
+            <br />
+            Sublime Text
+        </td>
+        <td align="center" valign="center">
+            <img src="images/tooling/emacs.png" alt="emacs" />
+            <br />
+            Emacs
+        </td><br>        <td align="center" valign="center">
+            <img src="images/tooling/eclipse.png" alt="eclipse" />
+            <br />
+            Eclipse
+        </td>
+        <td align="center" valign="center">
+            <img src="images/tooling/vs.png" alt="visual studio" />
+            <br />
+            Visual Studio
+        </td>
+    </tr>
+</table><aside class="notes"><ol>
+<li>auto completion</li>
+<li>type errors
+3.</li>
+</ol></aside>
+</section>
 </section>
 
 <section id="chapter-start" class="chapter">
 <section id="start-setup" class="slide" data-has-notes="false">
 <h2>Getting Started</h2><p>install TypeScript globally</p>
-<pre><code class="lang-bash">npm install -g typescript tsd
+<pre><code class="lang-bash">npm install -g typescript [ tsd | typings ]
 </code></pre>
 <ul>
 <li><p><code>typescript</code>: </p>
 <p>  TypeScript compiler translates .ts files to JS</p>
 </li>
-<li><p><code>tsd</code>: </p>
+<li><p><code>tsd</code> or <code>typings</code>: </p>
 <p>  TypeScript definition manager (optional)</p>
 </li>
 </ul>
 </section>
 
-<section id="start-first-code" class="slide" data-background="#eaeef3" data-transition="silde-in fade-out" data-has-notes="false">
+<section id="start-first-code" class="slide" data-background="#eaeef3" data-transition="slide-in fade-out" data-has-notes="false">
 <h2>Your First TypeScript code</h2><pre><code class="lang-typescript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greeter</span>(<span class="hljs-params">person</span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello, "</span> + person;
 }
@@ -115,7 +178,7 @@
 <p><em>no change!</em></p>
 </section>
 
-<section id="start-type-annotations" class="slide" data-background="#eaeec3" data-transition="silde-in fade-out" data-has-notes="false">
+<section id="start-type-annotations" class="slide" data-background="#eaeec3" data-transition="slide-in fade-out" data-has-notes="false">
 <h2>Type annotations</h2><pre><code class="lang-typescript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greeter</span>(<span class="hljs-params">person : <span class="hljs-built_in">string</span> </span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello, "</span> + person;
 }
@@ -126,7 +189,7 @@
 </code></pre>
 </section>
 
-<section id="start-type-annotations" class="slide" data-background="#eaeec3" data-transition="silde-in fade-out" data-has-notes="false">
+<section id="start-type-annotations" class="slide" data-background="#eaeec3" data-transition="fade" data-has-notes="false">
 <h2>Type annotations</h2><pre><code class="lang-typescript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greeter</span>(<span class="hljs-params">person : <span class="hljs-built_in">string</span> </span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello, "</span> + person;
 }
@@ -153,6 +216,7 @@
 
 <ul>
 <li><a href="https://basarat.gitbooks.io/typescript/content/docs/iterators.html">git book</a> : in depth guide to the language</li>
+<li><a href=""></a></li>
 </ul>
 </section></div>
     </div>
