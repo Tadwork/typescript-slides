@@ -65,3 +65,21 @@ pre code{
 #why-tooling table td{
 	border:none;
 }
+
+/* why future*/
+#why-future img {
+	background: initial;
+	border: initial;
+	box-shadow:initial;
+}
+
+#why-future #features {
+	position:absolute;
+	top:30px;
+	right:20px;
+}
+#why-future #features-next {
+	position:absolute;
+	top:30px;
+	right:-40px;
+}
