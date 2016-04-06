@@ -25,18 +25,21 @@
 }
 #hello .typed-js{
 	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-	margin-top: -200px;
+	margin-top: -150px;
 	position: absolute;
 	left: 25px;
 	font-size: 3.2em;
 	color: white;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
 }
 #hello #scales{
 	color: white;
 	margin-top: -60px;
 	margin-left: -180px;
 	position: absolute;
-	font-weight: bolder;
 }
 #why-why  p img.pull-right {
 	position: absolute;
