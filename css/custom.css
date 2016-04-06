@@ -4,7 +4,7 @@
 	text-transform: uppercase;
 }
 /*reset the logo styles*/
-#hello p img {
+#hello #logo{
 	 background: initial;
 	 border: initial;
 	 box-shadow:initial;
@@ -12,12 +12,32 @@
 #hello h3 {
 	color: white;
 }
-#hello h5 {
+#hello #version {
 	color: white;
 	text-align: right;
 	margin-bottom: -50px;
+	font-weight: normal;
+	line-height: 1.2;
+	letter-spacing: -0.08em;
+	text-transform: uppercase;
+	text-shadow: none;
+	word-wrap: break-word;
 }
-
+#hello .typed-js{
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	margin-top: -200px;
+	position: absolute;
+	left: 25px;
+	font-size: 3.2em;
+	color: white;
+}
+#hello #scales{
+	color: white;
+	margin-top: -60px;
+	margin-left: -180px;
+	position: absolute;
+	font-weight: bolder;
+}
 #why-why  p img.pull-right {
 	position: absolute;
 	top:350px;
@@ -30,7 +50,7 @@
 	z-index: 100;
 }
 
-#why-why  p img.pull-left {
+#why-why  div img.pull-left {
 	position: absolute;
 	top:440px;
 	left: 300px;

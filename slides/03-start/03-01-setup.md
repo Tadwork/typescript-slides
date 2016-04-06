@@ -11,4 +11,4 @@ npm install -g typescript [ tsd | typings ]
     TypeScript compiler translates .ts files to JS
 - `tsd` or `typings`: 
   
-    TypeScript definition manager (optional)
+    TypeScript definition manager _(optional)_
