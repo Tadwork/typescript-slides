@@ -1,19 +1,26 @@
-$transition:fade-in$
 ### Documentation
 
 ```typescript
+
 interface AnimationOptions {
     deltaX: number;
     deltaY: number;
-    easing: "ease-in" | "ease-out" | "ease-in-out";
+    easing: string; // Can be "ease-in", "ease-out", "ease-in-out"
 }
+
+declare class UIElement {
+    animate(options: AnimationOptions): void;
+}
+
 
 
 ```
 
-<div class="fragment">
-    now you can ...
+<div class="fragment highlight-red">
     <div class="fragment">
-        <p><b>create and enforce JavaScript contracts!</b></p>
+        <ul>
+            <li>this is error prone because the easing type can be mistyped</li>
+            <li>the developer must consult the documentation for each `easing` type</li>
+        </ul>
     </div>
 </div>

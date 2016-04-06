@@ -7,5 +7,4 @@ function sortByName(a){
     });
     return result;
 }
-
 sortByName(S);
