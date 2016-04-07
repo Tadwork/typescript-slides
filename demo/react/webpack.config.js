@@ -20,6 +20,7 @@ var config = {
             }
         ]
     },
+    devtool:'source-map',
     devServer: {
         hot: true,
         open:true,
