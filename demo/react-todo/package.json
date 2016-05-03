@@ -1,0 +1,19 @@
+{
+  "name": "typescript-react-webpack",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack-dev-server --inline --hot --open",
+    "typings": "typings install"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  }
+}
