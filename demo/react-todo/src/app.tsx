@@ -3,9 +3,9 @@ import * as ReactDOM from "react-dom";
 import { TodoModel } from "./todoModel";
 import { TodoFooter } from "./footer";
 import { TodoItem } from "./todoItem";
-import { ALL_TODOS, ACTIVE_TODOS, COMPLETED_TODOS, ENTER_KEY } from "./constants";
+import { ENTER_KEY } from "./constants";
 /*
-what if there are no typings for a module, then you can just 
+what if there are no typings for a module? then you can just 
 `require` it like a regular commonjs module  
 */
 const director:{
@@ -20,7 +20,7 @@ class TodoApp extends React.Component<IAppProps, IAppState> {
   constructor(props : IAppProps) {
     super(props);
     this.state = {
-      nowShowing: ALL_TODOS,
+      nowShowing: 'all',
       editing: null
     };
   }
@@ -28,9 +28,9 @@ class TodoApp extends React.Component<IAppProps, IAppState> {
   public componentDidMount() {
     var setState = this.setState;
     var router = Router({
-      '/': setState.bind(this, {nowShowing: ALL_TODOS}),
-      '/active': setState.bind(this, {nowShowing: ACTIVE_TODOS}),
-      '/completed': setState.bind(this, {nowShowing: COMPLETED_TODOS})
+      '/': setState.bind(this, {nowShowing: 'all'}),
+      '/active': setState.bind(this, {nowShowing: 'active'}),
+      '/completed': setState.bind(this, {nowShowing: 'completed'})
     });
     router.init('/');
   }
@@ -88,9 +88,9 @@ class TodoApp extends React.Component<IAppProps, IAppState> {
 
     var shownTodos = todos.filter((todo) => {
       switch (this.state.nowShowing) {
-      case ACTIVE_TODOS:
+      case 'active':
         return !todo.completed;
-      case COMPLETED_TODOS:
+      case 'completed':
         return todo.completed;
       default:
         return true;
@@ -151,7 +151,7 @@ class TodoApp extends React.Component<IAppProps, IAppState> {
     return (
       <div>
         <header className="header">
-          <h1>todos</h1>
+          <h1>TODO'S</h1>
           <input
             ref="newField"
             className="new-todo"

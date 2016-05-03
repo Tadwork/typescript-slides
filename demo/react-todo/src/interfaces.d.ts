@@ -1,3 +1,5 @@
+type NowShowing = 'all'|'active'|'completed';
+
 interface ITodo {
   id: string,
   title: string,
@@ -22,7 +24,7 @@ interface ITodoItemState {
 interface ITodoFooterProps {
   completedCount : number;
   onClearCompleted : any;
-  nowShowing : string;
+  nowShowing : NowShowing;
   count : number;
 }
 
@@ -47,5 +49,5 @@ interface IAppProps {
 
 interface IAppState {
   editing? : string;
-  nowShowing? : string
+  nowShowing? : NowShowing;
 }

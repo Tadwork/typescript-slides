@@ -1,4 +1,4 @@
-import { ALL_TODOS, ACTIVE_TODOS, COMPLETED_TODOS } from "./constants";
+
 import { Utils } from "./utils";
 import * as React from "react";
 import * as classNames  from "classnames";
@@ -28,7 +28,7 @@ class TodoFooter extends React.Component<ITodoFooterProps, {}> {
           <li>
             <a
               href="#/"
-              className={classNames({selected: nowShowing === ALL_TODOS})}>
+              className={classNames({selected: nowShowing === 'all'})}>
                 All
             </a>
           </li>
@@ -36,7 +36,7 @@ class TodoFooter extends React.Component<ITodoFooterProps, {}> {
           <li>
             <a
               href="#/active"
-              className={classNames({selected: nowShowing === ACTIVE_TODOS})}>
+              className={classNames({selected: nowShowing === 'active'})}>
                 Active
             </a>
           </li>
@@ -44,7 +44,7 @@ class TodoFooter extends React.Component<ITodoFooterProps, {}> {
           <li>
             <a
               href="#/completed"
-              className={classNames({selected: nowShowing === COMPLETED_TODOS})}>
+              className={classNames({selected: nowShowing === 'completed'})}>
                 Completed
             </a>
           </li>
