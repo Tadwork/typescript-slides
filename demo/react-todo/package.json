@@ -6,9 +6,13 @@
     "typings": "typings install"
   },
   "devDependencies": {
-    "ts-loader": "^0.8.1",
-    "typescript": "^1.8.9",
-    "typings": "^0.7.9",
+    "classnames": "^2.2.5",
+    "director": "^1.2.8",
+    "todomvc-app-css": "^2.0.4",
+    "todomvc-common": "^1.0.2",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
