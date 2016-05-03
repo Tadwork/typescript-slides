@@ -3,6 +3,13 @@
 #chapter-foo p {
 	text-transform: uppercase;
 }
+
+.no-border{
+	background: initial;
+	border: initial;
+	box-shadow:initial;
+}
+
 /*reset the logo styles*/
 #hello #logo{
 	 background: initial;
