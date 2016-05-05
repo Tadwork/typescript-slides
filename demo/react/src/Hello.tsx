@@ -1,7 +1,7 @@
 import * as React from "react";
 
 interface HiProps {
-    name: string;
+    name: 'SAVINGS'|'PAYDOWN';
     message:string;
 }
 
